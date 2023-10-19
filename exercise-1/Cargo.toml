@@ -1,0 +1,15 @@
+[package]
+name = "exercise-one-solution"
+version = "0.1.0"
+edition = "2021"
+
+# Build scripts are useful when one needs to perform some set of actions at build time.
+# Typical uses are building/linking to external C libraries or doing some sort of code generation before building a project. 
+# By placing a file named build.rs in the root of our project directory, we’re telling cargo to compile and execute build.rs just before building our project.
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libafl = { version = "0.11.1" }
+libafl_bolts = { version = "0.11.1" }
